@@ -14,3 +14,6 @@ Mockup using CoreUI admin template
     - Pestaña para asignar herramientas.
     - Notificación errores/guardado con éxito.
     - Validación de campos.
+- Listado Trabajadores
+    - Ventana modal confirmar eliminación
+    - Link editar/visualizar

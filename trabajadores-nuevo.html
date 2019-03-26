@@ -132,72 +132,95 @@
                                     </ul>
                                     <div class="tab-content" id="myTab1Content">
                                        <div class="tab-pane fade active show" id="personales" role="tabpanel" aria-labelledby="personales-tab">
-                                          <div class="row">
-                                             <div class="col-sm-12">
-                                                <div class="form-group">
-                                                   <label for="name">Nombre</label>
-                                                   <input class="form-control" id="name" type="text" placeholder="Nombre de la obra">
-                                                </div>
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="nombre">Nombre</label>
+                                             <div class="col-md-9">
+                                                <input class="form-control" id="nombre" type="text" placeholder="Nombre">
+                                             </div>
+                                          </div>
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="apellido1">Apellido 1</label>
+                                             <div class="col-md-9">
+                                                <input class="form-control" id="apellido1" type="text" placeholder="Apellido 1">
+                                             </div>
+                                          </div>
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="apellido2">Apellido 2</label>
+                                             <div class="col-md-9">
+                                                <input class="form-control" id="apellido2" type="text" placeholder="Apellido 2">
                                              </div>
                                           </div>
 
                                           <div class="form-group row">
-                                             <label class="col-md-3 col-form-label">Estado actual</label>
+                                             <label class="col-md-3 col-form-label" for="date-input">Fecha de nacimiento</label>
+                                             <div class="col-md-9">
+                                                <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                                                <span class="help-block">Introduce una fecha válida</span>
+                                             </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="dni">DNI / Pasaporte / NIE</label>
+                                             <div class="col-md-9">
+                                                <input class="form-control" id="dni" type="text" placeholder="DNI / Pasaporte / NIE">
+                                             </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label">Género</label>
                                              <div class="col-md-9 col-form-label">
                                                 <div class="form-check form-check-inline mr-1">
-                                                   <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
-                                                   <label class="form-check-label" for="inline-radio1">Proyecto</label>
+                                                   <input class="form-check-input" id="inline-genero" type="radio" value="hombre" name="inline-radios">
+                                                   <label class="form-check-label" for="inline-genero">Hombre</label>
                                                 </div>
                                                 <div class="form-check form-check-inline mr-1">
-                                                   <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
-                                                   <label class="form-check-label" for="inline-radio1">Pendiente Licencias</label>
-                                                </div>
-                                                <div class="form-check form-check-inline mr-1">
-                                                   <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
-                                                   <label class="form-check-label" for="inline-radio1">Pausa</label>
-                                                </div>
-                                                <div class="form-check form-check-inline mr-1">
-                                                   <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
-                                                   <label class="form-check-label" for="inline-radio2">En curso</label>
-                                                </div>
-                                                <div class="form-check form-check-inline mr-1">
-                                                   <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
-                                                   <label class="form-check-label" for="inline-radio3">Finalizada</label>
+                                                   <input class="form-check-input" id="inline-genero" type="radio" value="mujer" name="inline-radios">
+                                                   <label class="form-check-label" for="inline-genero">Mujer</label>
                                                 </div>
                                              </div>
                                           </div>
 
                                           <div class="form-group row">
-                                             <label class="col-md-3 col-form-label" for="date-input">Fecha Inicio</label>
+                                             <label class="col-md-3 col-form-label" for="direccion">Dirección</label>
                                              <div class="col-md-9">
-                                                <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
-                                                <span class="help-block">Introduce una fecha válida</span>
+                                                <input class="form-control" id="direccion" type="text" placeholder="Dirección">
                                              </div>
                                           </div>
 
                                           <div class="form-group row">
-                                             <label class="col-md-3 col-form-label" for="date-input">Fecha Fin Prevista</label>
+                                             <label class="col-md-3 col-form-label" for="ciudad">Ciudad</label>
                                              <div class="col-md-9">
-                                                <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
-                                                <span class="help-block">Introduce una fecha válida</span>
+                                                <input class="form-control" id="ciudad" type="text" placeholder="Introduce la ciudad">
                                              </div>
                                           </div>
 
                                           <div class="form-group row">
-                                             <label class="col-md-3 col-form-label" for="select1">Licencia</label>
+                                             <label class="col-md-3 col-form-label" for="cp">Código Postal</label>
                                              <div class="col-md-9">
-                                                <input class="form-control" id="vat" type="text" placeholder="PL1234567890">
+                                                <input class="form-control" id="cp" type="text" placeholder="Código Postal">
                                              </div>
                                           </div>
 
                                           <div class="form-group row">
-                                             <label class="col-md-3 col-form-label" for="select1">Responsable</label>
+                                             <label class="col-md-3 col-form-label" for="nacionalidad">Provincia</label>
                                              <div class="col-md-9">
-                                                <select class="form-control" id="select1" name="select1">
-                                                   <option value="0">Selecciona un responsable</option>
-                                                   <option value="1">Manolo García</option>
-                                                   <option value="2">Freddy Mercury</option>
-                                                   <option value="3">Paco Pérez</option>
+                                                <select class="form-control" id="Provincia" name="Provincia">
+                                                   <option value="0">Provincia</option>
+                                                   <option value="1">España</option>
+                                                   <option value="2">Francia</option>
+                                                   <option value="3">Italia</option>
+                                                </select>
+                                             </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="nacionalidad">Nacionalidad</label>
+                                             <div class="col-md-9">
+                                                <select class="form-control" id="nacionalidad" name="nacionalidad">
+                                                   <option value="0">Pais de nacimiento</option>
+                                                   <option value="1">España</option>
+                                                   <option value="2">Francia</option>
+                                                   <option value="3">Italia</option>
                                                 </select>
                                              </div>
                                           </div>
@@ -238,6 +261,10 @@
                                           </div>
                                        </div>
                                     </div>
+                                 </div>
+                                 <div class="card-footer">
+                                    <button class="btn btn-sm btn-success" type="submit">
+                                       <i class="fa fa-dot-circle-o"></i> Guardar</button>
                                  </div>
                               </div>
                            </div>
