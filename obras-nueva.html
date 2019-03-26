@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+      <meta name="author" content="Łukasz Holeczek">
+      <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+      <title>Obras | Nueva - Ramendieta</title>
+      <link href="https://coreui.io/demo/dark/vendors/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+      <link href="https://coreui.io/demo/dark/vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+      <link href="https://coreui.io/demo/dark/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://coreui.io/demo/dark/vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+      <link href="https://coreui.io/demo/dark/css/style.css" rel="stylesheet">
+      <link href="https://coreui.io/demo/dark/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+      <link href="https://coreui.io/demo/dark/vendors/codemirror/css/codemirror.css" rel="stylesheet">
+      <style type="text/css">/* Chart.js */
+         @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+      </style>
+      <style type="text/css">/* Chart.js */
+         @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+      </style>
+   </head>
+   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show   pace-done" cz-shortcut-listen="true">
+      <div class="pace  pace-Parada">
+         <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+         </div>
+         <div class="pace-activity"></div>
+      </div>
+      <header class="app-header navbar">
+         <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <a class="navbar-brand" href="#">
+         <img class="navbar-brand-full" src="https://www.ramendieta.es/images/global/mendieta-logo.jpg" width="108" height="32" alt="CoreUI Logo">
+         <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
+         </a>
+         <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown d-md-down-none">
+               <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                  <div class="dropdown-header text-center">
+                     <strong>You have 5 notifications</strong>
+                  </div>
+                  <a class="dropdown-item" href="#">
+                  <i class="icon-user-follow text-success"></i> New user registered</a>
+                  <a class="dropdown-item" href="#">
+                  <i class="icon-user-unfollow text-danger"></i> User deleted</a>
+                  <a class="dropdown-item" href="#">
+                  <i class="icon-chart text-info"></i> Sales report is ready</a>
+                  <a class="dropdown-item" href="#">
+                  <i class="icon-basket-loaded text-primary"></i> New client</a>
+                  <a class="dropdown-item" href="#">
+                  <i class="icon-speedometer text-warning"></i> Server overloaded</a>
+                  <div class="dropdown-header text-center">
+                     <strong>Server</strong>
+                  </div>
+                  <a class="dropdown-item" href="#">
+                     <div class="text-uppercase mb-1">
+                        <small>
+                        <b>CPU Usage</b>
+                        </small>
+                     </div>
+                     <span class="progress progress-xs">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                     </span>
+                     <small class="text-muted">348 Processes. 1/4 Cores.</small>
+                  </a>
+                  <a class="dropdown-item" href="#">
+                     <div class="text-uppercase mb-1">
+                        <small>
+                        <b>Memory Usage</b>
+                        </small>
+                     </div>
+                     <span class="progress progress-xs">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                     </span>
+                     <small class="text-muted">11444GB/16384MB</small>
+                  </a>
+                  <a class="dropdown-item" href="#">
+                     <div class="text-uppercase mb-1">
+                        <small>
+                        <b>SSD 1 Usage</b>
+                        </small>
+                     </div>
+                     <span class="progress progress-xs">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                     </span>
+                     <small class="text-muted">243GB/256GB</small>
+                  </a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+               <img class="img-avatar" src="https://coreui.io/demo/dark/img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+               </a>
+               <div class="dropdown-menu dropdown-menu-right">
+                  <div class="dropdown-header text-center">
+                     <strong>Administrador</strong>
+                  </div>
+                  <a class="dropdown-item" href="notificaciones.html">
+                     <i class="fa fa-bell-o"></i> Notificaciones
+                     <span class="badge badge-info">42</span>
+                  </a>
+
+                  <div class="dropdown-header text-center">
+                     <strong>Configuración</strong>
+                  </div>
+                  <a class="dropdown-item" href="miperfil.html">
+                     <i class="fa fa-user"></i> Mi perfil</a>
+                  <a class="dropdown-item" href="personalizar.html">
+                     <i class="fa fa-wrench"></i> Personalizar</a>
+
+                  <a class="dropdown-item" href="index.html">
+                     <i class="fa fa-lock"></i> Cerrar Sesión</a>
+               </div>
+            </li>
+         </ul>
+
+         <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+      </header>
+      <div class="app-body">
+         <div class="sidebar">
+            <nav class="sidebar-nav ps">
+               <ul class="nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="resumen.html">
+                     <i class="nav-icon icon-speedometer"></i>Resumen
+                     </a>
+                  </li>
+                  <li class="nav-title">OBRAS</li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="obras-listado.html">
+                     <i class="nav-icon icon-drop"></i>Ver todas</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="obras-nueva.html">
+                     <i class="nav-icon icon-pencil"></i>Nueva</a>
+                  </li>
+                  <li class="nav-title">TRABAJADORES</li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="trabajadores-listado.html">
+                     <i class="nav-icon icon-puzzle"></i>Ver todos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="trabajadores-nuevo.html">
+                     <i class="nav-icon icon-puzzle"></i>Nuevo</a>
+                  </li>
+                  <li class="nav-divider"></li>
+                  <li class="nav-title">HERRAMIENTAS</li>
+                  <li class="nav-item nav-dropdown">
+                     <a class="nav-link" href="herramientas-listado.html">
+                     <i class="nav-icon icon-star"></i>Ver todas</a>
+                  </li>
+                  <li class="nav-item nav-dropdown">
+                     <a class="nav-link" href="herramientas-nueva.html">
+                     <i class="nav-icon icon-layers"></i>Nueva</a>
+                  </li>
+                  <li class="nav-divider"></li>
+               </ul>
+               <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                  <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+               </div>
+               <div class="ps__rail-y" style="top: 0px; height: 833px; right: 0px;">
+                  <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+               </div>
+            </nav>
+            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+         </div>
+         <main class="main">
+            <div class="container-fluid">
+               <div id="ui-view">
+                  <div>
+                     <div class="animated fadeIn" style="margin-top: 10px">
+                        <div class="row">
+
+                           <div class="col-md-12">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <i class="fa fa-align-justify"></i> Nueva obra
+                                 </div>
+                                 <div class="card-body">
+                                    <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                                       <li class="nav-item">
+                                          <a class="nav-link active show" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Información básica</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Localización</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Trabajadores</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" id="tareas-tab" data-toggle="tab" href="#tareas" role="tab" aria-controls="profile" aria-selected="false">Tareas</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" id="docs-tab" data-toggle="tab" href="#docs" role="tab" aria-controls="docs" aria-selected="false">Documentación</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" id="notas-tab" data-toggle="tab" href="#notas" role="tab" aria-controls="notas" aria-selected="false">Notas</a>
+                                       </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTab1Content">
+                                       <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                          <div class="row">
+                                             <div class="col-sm-12">
+                                                <div class="form-group">
+                                                   <label for="name">Nombre</label>
+                                                   <input class="form-control" id="name" type="text" placeholder="Nombre de la obra">
+                                                </div>
+                                             </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label">Estado actual</label>
+                                             <div class="col-md-9 col-form-label">
+                                                <div class="form-check form-check-inline mr-1">
+                                                   <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
+                                                   <label class="form-check-label" for="inline-radio1">Proyecto</label>
+                                                </div>
+                                                <div class="form-check form-check-inline mr-1">
+                                                   <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
+                                                   <label class="form-check-label" for="inline-radio1">Pendiente Licencias</label>
+                                                </div>
+                                                <div class="form-check form-check-inline mr-1">
+                                                   <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
+                                                   <label class="form-check-label" for="inline-radio1">Pausa</label>
+                                                </div>
+                                                <div class="form-check form-check-inline mr-1">
+                                                   <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
+                                                   <label class="form-check-label" for="inline-radio2">En curso</label>
+                                                </div>
+                                                <div class="form-check form-check-inline mr-1">
+                                                   <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
+                                                   <label class="form-check-label" for="inline-radio3">Finalizada</label>
+                                                </div>
+                                             </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="date-input">Fecha Inicio</label>
+                                             <div class="col-md-9">
+                                                <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                                                <span class="help-block">Introduce una fecha válida</span>
+                                             </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="date-input">Fecha Fin Prevista</label>
+                                             <div class="col-md-9">
+                                                <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                                                <span class="help-block">Introduce una fecha válida</span>
+                                             </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="select1">Licencia</label>
+                                             <div class="col-md-9">
+                                                <input class="form-control" id="vat" type="text" placeholder="PL1234567890">
+                                             </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                             <label class="col-md-3 col-form-label" for="select1">Responsable</label>
+                                             <div class="col-md-9">
+                                                <select class="form-control" id="select1" name="select1">
+                                                   <option value="0">Selecciona un responsable</option>
+                                                   <option value="1">Manolo García</option>
+                                                   <option value="2">Freddy Mercury</option>
+                                                   <option value="3">Paco Pérez</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                          <div class="row">
+                                             <div class="col-sm-12">
+                                                <div class="form-group">
+                                                   <label for="ccnumber">Dirección</label>
+                                                   <input class="form-control" id="ccnumber" type="text" placeholder="Avenida de la Castellana 24">
+                                                </div>
+                                             </div>
+                                          </div>
+
+                                          <div class="row">
+                                             <div class="form-group col-sm-8">
+                                                <label for="city">Ciudad</label>
+                                                <input class="form-control" id="city" type="text" placeholder="Introduce la ciudad">
+                                             </div>
+                                             <div class="form-group col-sm-4">
+                                                <label for="postal-code">Código Postal</label>
+                                                <input class="form-control" id="postal-code" type="text" placeholder="Código Postal">
+                                             </div>
+                                          </div>
+                                          <div class="form-group">
+                                             <label for="vat">Provincia</label>
+                                             <select class="form-control" id="select1" name="select1">
+                                                <option value="0">Selecciona provincia</option>
+                                                <option value="1">Option #1</option>
+                                                <option value="2">Option #2</option>
+                                                <option value="3">Option #3</option>
+                                             </select>
+                                          </div>
+
+                                          <div class="form-group">
+                                             <label for="country">Pais</label>
+                                             <input class="form-control" id="country" type="text" placeholder="Nombre pais">
+                                          </div>
+                                       </div>
+                                       <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                          <div class="row">
+                                             <div class="col-sm-6 col-md-6">
+                                                <div class="card border-success">
+                                                   <div class="card-header" style="background-color: rgba(77,189,116,0.6); ">Asignados a la obra</div>
+                                                      <ul class="list-group">
+                                                         <li class="list-group-item">Manolo Pérez Rodríguez</li>
+                                                         <li class="list-group-item">Carlos Roldán Jiménez</li>
+                                                      </ul>
+                                                </div>
+                                             </div>
+
+                                             <div class="col-sm-6 col-md-6">
+                                                <div class="card card-accent-warning">
+                                                   <div class="card-header" style="background-color: rgba(255,193,7, 0.6); ">Trabajadores disponibles</div>
+                                                   <ul class="list-group" style="height: 200px; overflow-y: scroll;">
+                                                      <li class="list-group-item">Victor Pérez Manuel</li>
+                                                      <li class="list-group-item">Camilo Jose Cela</li>
+                                                      <li class="list-group-item">Edgar Alan Poe</li>
+                                                      <li class="list-group-item">Pedro Copado</li>
+                                                      <li class="list-group-item">Claudia Ramírez</li>
+                                                      <li class="list-group-item">Olga Velasco</li>
+                                                      <li class="list-group-item">Albert Espinosa</li>
+                                                      <li class="list-group-item">Albert Espinosa</li>
+                                                      <li class="list-group-item">Albert Espinosa</li>
+                                                      <li class="list-group-item">Albert Espinosa</li>
+                                                      <li class="list-group-item">Albert Espinosa</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+
+                                       </div>
+                                       <div class="tab-pane fade" id="tareas" role="tabpanel" aria-labelledby="tareas-tab">
+                                          <div class="row">
+                                             <div class="col-md-12">
+                                                <div class="card">
+                                                   <div class="card-header">Nueva Tarea</div>
+                                                   <div class="card-body">
+                                                      <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                                                         <div class="form-group">
+                                                            <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Título">
+                                                         </div>
+                                                         <div class="form-group ">
+                                                            <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9" placeholder="Descripción de la tarea.."></textarea>
+                                                         </div>
+                                                         <div class="form-group row">
+                                                            <label class="col-md-3 col-form-label">Prioridad</label>
+                                                            <div class="col-md-9 col-form-label">
+                                                               <div class="form-check form-check-inline mr-1">
+                                                                  <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
+                                                                  <label class="form-check-label" for="inline-radio1">Baja</label>
+                                                               </div>
+                                                               <div class="form-check form-check-inline mr-1">
+                                                                  <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
+                                                                  <label class="form-check-label" for="inline-radio2">Media</label>
+                                                               </div>
+                                                               <div class="form-check form-check-inline mr-1">
+                                                                  <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
+                                                                  <label class="form-check-label" for="inline-radio3">Urgente</label>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="form-group row">
+                                                            <label class="col-md-3 col-form-label" for="date-input">Fecha finalización</label>
+                                                            <div class="col-md-9">
+                                                               <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                                                               <span class="help-block">Escribe una fecha válida</span>
+                                                            </div>
+                                                         </div>
+                                                      </form>
+                                                   </div>
+                                                   <div class="card-footer">
+                                                      <button class="btn btn-sm btn-success" type="submit">
+                                                         <i class="fa fa-dot-circle-o"></i> Crear Tarea</button>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6 col-md-4">
+                                                <div class="card card-accent-danger">
+                                                   <div class="card-header">Tarea 1 <span class="badge badge-danger float-right">Eliminar</span></div>
+                                                   <div class="card-body">
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia consequat ante, non cursus nunc cursus vel. Phasellus imperdiet volutpat est vel tempor.
+                                                      <br /><br /><small>18/08/2019 - URGENTE</small>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6 col-md-4">
+                                                <div class="card card-accent-danger">
+                                                   <div class="card-header">Tarea 2 <span class="badge badge-danger float-right">Eliminar</span></div>
+                                                   <div class="card-body">
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia consequat ante, non cursus nunc cursus vel. Phasellus imperdiet volutpat est vel tempor.
+                                                      <br /><br /><small>18/09/2019 - URGENTE</small>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6 col-md-4">
+                                                <div class="card card-accent-warning">
+                                                   <div class="card-header">Tarea 3 <span class="badge badge-danger float-right">Eliminar</span></div>
+                                                   <div class="card-body">
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia consequat ante, non cursus nunc cursus vel. Phasellus imperdiet volutpat est vel tempor.
+                                                      <br /><br /><small>18/06/2019 - Prioridad media</small>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6 col-md-4">
+                                                <div class="card card-accent-success">
+                                                   <div class="card-header">Tarea 23 <span class="badge badge-danger float-right">Eliminar</span></div>
+                                                   <div class="card-body">
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia consequat ante, non cursus nunc cursus vel. Phasellus imperdiet volutpat est vel tempor.
+                                                      <br /><br /><small>18/06/2019 - Prioridad baja</small>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6 col-md-4">
+                                                <div class="card card-accent-warning">
+                                                   <div class="card-header">Revestimiento metálico <span class="badge badge-danger float-right">Eliminar</span></div>
+                                                   <div class="card-body">
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia consequat ante, non cursus nunc cursus vel. Phasellus imperdiet volutpat est vel tempor.
+                                                      <br /><br /><small>18/06/2019 - Prioridad media</small>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="tab-pane fade" id="docs" role="tabpanel" aria-labelledby="docs-tab">
+
+                                          <div class="card card-accent-success">
+                                             <div class="card-header">
+                                                Adjuntar documentos
+                                             </div>
+                                             <div class="card-body">
+                                                <div class="form-group row">
+                                                   <label class="col-md-3 col-form-label" for="file-multiple-input">Seleccionar archivos</label>
+                                                   <div class="col-md-9">
+                                                      <input id="file-multiple-input" type="file" name="file-multiple-input" multiple="">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="card-footer">
+                                                <button class="btn btn-sm btn-success" type="submit">
+                                                   <i class="fa icon-plus"></i> Agregar documento</button>
+                                             </div>
+                                          </div>
+
+                                          <div class="card card-accent-info">
+                                             <div class="card-header">
+                                                Pedro Martínez Rodríguez - 16/03/2019 15:13
+
+                                             </div>
+                                             <div class="card-body">
+                                                <div>
+                                                      <i class="fa fa-file-archive-o fa-lg mt-4"></i> licencia-obra.zip (479 Kb) <span class="badge badge-danger float-right">Eliminar</span>
+                                                </div>
+                                                <div>
+                                                   <i class="fa fa-file-photo-o fa-lg mt-4"></i> foto1.jpg (179 Kb) <span class="badge badge-danger float-right">Eliminar</span>
+                                                </div>
+                                                <div>
+                                                   <i class="fa fa-file-photo-o fa-lg mt-4"></i> foto2.jpg (249 Kb) <span class="badge badge-danger float-right">Eliminar</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="card card-accent-info">
+                                             <div class="card-header">
+                                                Pedro Martínez Rodríguez - 16/03/2019 15:13
+                                             </div>
+                                             <div class="card-body">
+                                                <div>
+                                                   <i class="fa fa-file-photo-o fa-lg mt-4"></i> foto3.jpg (139 Kb) <span class="badge badge-danger float-right">Eliminar</span>
+                                                </div>
+                                                <div>
+                                                   <i class="fa fa-file-video-o fa-lg mt-4"></i> acceso.mp4 (1249 Kb) <span class="badge badge-danger float-right">Eliminar</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="tab-pane fade" id="notas" role="tabpanel" aria-labelledby="notas-tab">
+                                          <div class="card">
+                                             <div class="card-header">
+                                                Nueva nota
+                                             </div>
+                                             <div class="card-body">
+                                                <textarea id="codemirror" style="display: none;"></textarea>
+                                             </div>
+                                             <div class="card-footer">
+                                                <button class="btn btn-sm btn-success" type="submit">
+                                                   <i class="fa icon-plus"></i> Agregar nota</button>
+                                             </div>
+                                          </div>
+
+                                          <div class="card card-accent-success">
+                                             <div class="card-header">
+                                                Pedro Martínez Rodríguez - 16/03/2019 15:13
+                                                <span class="badge badge-danger float-right">Eliminar</span>
+                                             </div>
+                                             <div class="card-body">
+                                                Camión no ha podido entrar a obra debido a la lluvia.
+                                             </div>
+                                          </div>
+
+                                          <div class="card card-accent-success">
+                                             <div class="card-header">
+                                                José María Móstoles - 14/03/2019 19:10
+                                                <span class="badge badge-danger float-right">Eliminar</span>
+
+                                             </div>
+                                             <div class="card-body">
+                                                Se ha acabado la pintura.
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card-footer">
+                                       <button class="btn btn-sm btn-success" type="submit">
+                                       <i class="fa fa-dot-circle-o"></i> Guardar</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!--
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <strong>Otros campos disponibles</strong> </div>
+                                 <div class="card-body">
+                                    <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label">Static</label>
+                                          <div class="col-md-9">
+                                             <p class="form-control-static">Username</p>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
+                                          <div class="col-md-9">
+                                             <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
+                                             <span class="help-block">This is a help text</span>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="email-input">Email Input</label>
+                                          <div class="col-md-9">
+                                             <input class="form-control" id="email-input" type="email" name="email-input" placeholder="Enter Email" autocomplete="email">
+                                             <span class="help-block">Please enter your email</span>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="password-input">Password</label>
+                                          <div class="col-md-9">
+                                             <input class="form-control" id="password-input" type="password" name="password-input" placeholder="Password" autocomplete="new-password">
+                                             <span class="help-block">Please enter a complex password</span>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
+                                          <div class="col-md-9">
+                                             <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                                             <span class="help-block">Please enter a valid date</span>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
+                                          <div class="col-md-9">
+                                             <input class="form-control" id="disabled-input" type="text" name="disabled-input" placeholder="Disabled" disabled="">
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
+                                          <div class="col-md-9">
+                                             <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9" placeholder="Content.."></textarea>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="select1">Select</label>
+                                          <div class="col-md-9">
+                                             <select class="form-control" id="select1" name="select1">
+                                                <option value="0">Please select</option>
+                                                <option value="1">Option #1</option>
+                                                <option value="2">Option #2</option>
+                                                <option value="3">Option #3</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="select2">Select Large</label>
+                                          <div class="col-md-9">
+                                             <select class="form-control form-control-lg" id="select2" name="select2">
+                                                <option value="0">Please select</option>
+                                                <option value="1">Option #1</option>
+                                                <option value="2">Option #2</option>
+                                                <option value="3">Option #3</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="select3">Select Small</label>
+                                          <div class="col-md-9">
+                                             <select class="form-control form-control-sm" id="select3" name="select3">
+                                                <option value="0">Please select</option>
+                                                <option value="1">Option #1</option>
+                                                <option value="2">Option #2</option>
+                                                <option value="3">Option #3</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
+                                          <div class="col-md-9">
+                                             <select class="form-control" id="disabledSelect" disabled="">
+                                                <option value="0">Please select</option>
+                                                <option value="1">Option #1</option>
+                                                <option value="2">Option #2</option>
+                                                <option value="3">Option #3</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="multiple-select">Multiple select</label>
+                                          <div class="col-md-9">
+                                             <select class="form-control" id="multiple-select" name="multiple-select" size="5" multiple="">
+                                                <option value="1">Option #1</option>
+                                                <option value="2">Option #2</option>
+                                                <option value="3">Option #3</option>
+                                                <option value="4">Option #4</option>
+                                                <option value="5">Option #5</option>
+                                                <option value="6">Option #6</option>
+                                                <option value="7">Option #7</option>
+                                                <option value="8">Option #8</option>
+                                                <option value="9">Option #9</option>
+                                                <option value="10">Option #10</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label">Radios</label>
+                                          <div class="col-md-9 col-form-label">
+                                             <div class="form-check">
+                                                <input class="form-check-input" id="radio1" type="radio" value="radio1" name="radios">
+                                                <label class="form-check-label" for="radio1">Option 1</label>
+                                             </div>
+                                             <div class="form-check">
+                                                <input class="form-check-input" id="radio2" type="radio" value="radio2" name="radios">
+                                                <label class="form-check-label" for="radio2">Option 2</label>
+                                             </div>
+                                             <div class="form-check">
+                                                <input class="form-check-input" id="radio3" type="radio" value="radio2" name="radios">
+                                                <label class="form-check-label" for="radio3">Option 3</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label">Inline Radios</label>
+                                          <div class="col-md-9 col-form-label">
+                                             <div class="form-check form-check-inline mr-1">
+                                                <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
+                                                <label class="form-check-label" for="inline-radio1">One</label>
+                                             </div>
+                                             <div class="form-check form-check-inline mr-1">
+                                                <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
+                                                <label class="form-check-label" for="inline-radio2">Two</label>
+                                             </div>
+                                             <div class="form-check form-check-inline mr-1">
+                                                <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
+                                                <label class="form-check-label" for="inline-radio3">Three</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label">Checkboxes</label>
+                                          <div class="col-md-9 col-form-label">
+                                             <div class="form-check checkbox">
+                                                <input class="form-check-input" id="check1" type="checkbox" value="">
+                                                <label class="form-check-label" for="check1">Option 1</label>
+                                             </div>
+                                             <div class="form-check checkbox">
+                                                <input class="form-check-input" id="check2" type="checkbox" value="">
+                                                <label class="form-check-label" for="check2">Option 2</label>
+                                             </div>
+                                             <div class="form-check checkbox">
+                                                <input class="form-check-input" id="check3" type="checkbox" value="">
+                                                <label class="form-check-label" for="check3">Option 3</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label">Inline Checkboxes</label>
+                                          <div class="col-md-9 col-form-label">
+                                             <div class="form-check form-check-inline mr-1">
+                                                <input class="form-check-input" id="inline-checkbox1" type="checkbox" value="check1">
+                                                <label class="form-check-label" for="inline-checkbox1">One</label>
+                                             </div>
+                                             <div class="form-check form-check-inline mr-1">
+                                                <input class="form-check-input" id="inline-checkbox2" type="checkbox" value="check2">
+                                                <label class="form-check-label" for="inline-checkbox2">Two</label>
+                                             </div>
+                                             <div class="form-check form-check-inline mr-1">
+                                                <input class="form-check-input" id="inline-checkbox3" type="checkbox" value="check3">
+                                                <label class="form-check-label" for="inline-checkbox3">Three</label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="file-input">File input</label>
+                                          <div class="col-md-9">
+                                             <input id="file-input" type="file" name="file-input">
+                                          </div>
+                                       </div>
+                                       <div class="form-group row">
+                                          <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
+                                          <div class="col-md-9">
+                                             <input id="file-multiple-input" type="file" name="file-multiple-input" multiple="">
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <div class="card-footer">
+                                    <button class="btn btn-sm btn-primary" type="submit">
+                                       <i class="fa fa-dot-circle-o"></i> Submit</button>
+                                    <button class="btn btn-sm btn-danger" type="reset">
+                                       <i class="fa fa-ban"></i> Reset</button>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                        -->
+
+
+
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+
+      </div>
+      <footer class="app-footer">
+         
+      </footer>
+      <script src="https://coreui.io/demo/dark/vendors/jquery/js/jquery.min.js"></script>
+     <script src="https://coreui.io/demo/dark/vendors/popper.js/js/popper.min.js"></script>
+      <script src="https://coreui.io/demo/dark/vendors/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://coreui.io/demo/dark/vendors/pace-progress/js/pace.min.js"></script>
+      <script src="https://coreui.io/demo/dark/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+      <script src="https://coreui.io/demo/dark/vendors/@coreui/coreui-pro/js/coreui.min.js"></script>
+      <script type="text/javascript" src="https://coreui.io/demo/dark/vendors/codemirror/js/codemirror.js" class="view-script"></script>
+      <script type="text/javascript" src="https://coreui.io/demo/dark/vendors/codemirror/js/xml.js" class="view-script"></script>
+      <script>
+          var editor=CodeMirror.fromTextArea(codemirror,{mode:'xml',htmlMode:true});editor.setSize('100%',400);
+      </script>
+
+      <script type="text/javascript" src="https://coreui.io/demo/dark/vendors/datatables.net/js/jquery.dataTables.js" class="view-script"></script><script type="text/javascript" src="https://coreui.io/demo/dark/vendors/datatables.net-bs4/js/dataTables.bootstrap4.js" class="view-script"></script><script type="text/javascript" src="https://coreui.io/demo/dark/js/datatables.js" class="view-script"></script><span style="margin: 0px auto; border: 2px dotted rgb(0, 0, 0); position: absolute; z-index: 2147483647; visibility: hidden; left: 348px; width: 0px; top: 266px; height: 0px;"></span><span style="z-index: 2147483647; position: absolute; visibility: hidden; left: 333px; width: 50px; top: 251px; height: 20px; font-size: 10px; color: black;"></span>
+   </body>
+</html>
